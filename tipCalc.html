@@ -1,0 +1,30 @@
+
+<html>
+  <center>
+	<body>
+    <head>
+    <title>Tip Calculator</title>
+    </head>
+
+		<h1>Tip Calculator</h1>
+		<p class="lead">Sample app to calculate the correct amount you should tip on a meal.</p>
+    <button onclick="calcTip()">Calculate!</button>
+    <p id="demo"></p>
+
+<script>
+
+    var finalTip;
+
+    function calcTip() {
+	     var priceMeal = Number(prompt("How much did the meal cost?"));
+       var amountTip = Number(prompt("How much do you want to tip? (decimal form)"));
+       finalTip = priceMeal + (priceMeal * amountTip);
+
+       document.getElementById("demo").innerHTML = finalTip;
+     }
+
+</script>
+
+	</body>
+  </center>
+</html>
